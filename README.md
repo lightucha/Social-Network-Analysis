@@ -6,3 +6,5 @@
 2. closeness centrality
 3. betweeness centrality
 4. authority and hub
+
+_(shortest path algorithm)_ dijkstra's algorithm using adjacency matrix
