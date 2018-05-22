@@ -1,3 +1,8 @@
+'''
+dijkstra's algorithm using adjacency algorithm
+reference by https://repl.it/repls/CookedWelltodoPatterns
+'''
+
 graph = [[0,3,2,4,None,None],
         [3,0,None,2,None,5],
         [2,None,0,None,1,None],
