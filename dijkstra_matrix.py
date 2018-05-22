@@ -71,30 +71,27 @@ def shortest_path():
     print("Shortest path:")
     current_vertex = len(graph) - 1
     path_string = ""
-    temp = []
+    orderlist = []
     while current_vertex > 0:
 
         # Add the distance for the current vertex from the start in brackets after the letter of the vertex.
         path_string = "{0}({1}) ".format(chr(current_vertex + 65), distances_from_start[current_vertex][0]) + path_string
-        print(path_string)
 
-        a = [chr(current_vertex + 65), distances_from_start[current_vertex][0]]
+        temp = [chr(current_vertex + 65), distances_from_start[current_vertex][0]]
 
-        temp.append(a)
+        orderlist.append(temp)
 
         # Update the current vertex to be the one that the current one goes via on its way back to the start
         current_vertex = distances_from_start[current_vertex][1]  # distances_from_start[vertex number, via vertex]
-        print(current_vertex)
 
 
     # Add the start vertex to the output string as the while loop will stop before we add its details to the string
     path_string = "{0}({1}) ".format(chr(current_vertex + 65), distances_from_start[current_vertex][0]) + path_string
 
-    a = [chr(current_vertex + 65), distances_from_start[current_vertex][0]]
-    temp.append(a)
+    temp = [chr(current_vertex + 65), distances_from_start[current_vertex][0]]
+    orderlist.append(temp)
 
     print(path_string)
-    print('path:  ', temp[::-1])
 
 #print_adj_matrix()
 shortest_path()
