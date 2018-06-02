@@ -4,7 +4,7 @@
 ### Assign.1
 - Creating and Manipulating Graphs
 ### Assign.2
-
+- Network Connectivity
 ### Assign.3
 1. degree centrality
 2. closeness centrality
