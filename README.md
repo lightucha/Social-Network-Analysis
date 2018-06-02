@@ -1,11 +1,11 @@
 # Social-Network-Analysis
 [2018 Spring] SNA class in UNIST
 
-### Assign1
+### Assign.1
+- Creating and Manipulating Graphs
+### Assign.2
 
-### Assign2
-
-### Assign3
+### Assign.3
 1. degree centrality
 2. closeness centrality
 3. betweeness centrality
